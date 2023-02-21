@@ -37,12 +37,12 @@ app.post("/",function(req,res){
     };
 
     var jsonData=JSON.stringify(data);
-    const url="https://us17.api.mailchimp.com/3.0/lists/6b5e5977f5";//sending to mailchimp using its specified url
+    const url="https://us17.api.mailchimp.com/3.0/lists/6b5e5977f4";//sending to mailchimp using its specified url
 
    
     options={
       method:"POST",
-      auth:"Bhagyashree:831b6a112c0b4880dd90bdc02f595e13-us17"
+      auth:"Bhagyashree:3a85f5afc324f7be2e3862119ba77a43-us17"
     }
     const request=https.request(url,options,function(response){//request from bhagya's friends --basic authentication
 
@@ -74,5 +74,5 @@ app.listen(process.env.PORT || 3000,function(){
     console.log("Server is running on port 3000");
 });
 
-//831b6a112c0b4880dd90bdc02f595e13-us17--api key
+//3a85f5afc324f7be2e3862119ba77a43-us17-api key
 //---list---6b5e5977f4---to identify the list where u wanna put ur subscribers into
